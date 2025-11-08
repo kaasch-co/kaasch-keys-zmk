@@ -2,21 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-
-    - name: kaasch-co
-      url-base: https://github.com/kaasch-co
-
   projects:
     # Together with the above defined remote, this refers to a module located at
     # https://github.com/remote-name/repository-name
     - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-
-    - name: kaasch-keys-zmk
-      remote: kaasch-co
-      revision: main
-
-  self:
-    path: config
+      remote: zmk
+      # This points to a west manifest file in the remote module for further imports
+      import: west.yml
