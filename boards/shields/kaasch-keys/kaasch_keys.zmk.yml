@@ -3,7 +3,7 @@ id: kaaschkeys
 name: Kaasch Keys
 type: shield
 url: https://github.com/kaasch-co/kaasch-keys/
-requires: [nice_nano]
+requires: [nice_nano_v2]
 features:
   - keys
 siblings:
